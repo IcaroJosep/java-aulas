@@ -1,10 +1,14 @@
+
+import java.util.Iterator;
 import java.util.Scanner;
+
+
 
 public class Exemplo001 {
 
 	public static void main(String[] args) {
 	
-	/*VARIAVEIS*/
+   /*VARIAVEIS*/
 		
 		/*	short x1 = 999; 		 // -32768 to 32767
 			int   x2 = 99999; 		 // -2147483648 to 2147483647
@@ -22,8 +26,12 @@ public class Exemplo001 {
 			byte x6 = 99; // -128 to 127
 			char x7 = 'A';
 			boolean x8 = true;
+			
+			String nome = "icaro" ;
+		
 		*/    
-	/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	 * */	
 		
 	/*OPERADORES
@@ -52,13 +60,15 @@ public class Exemplo001 {
 			 	
 			 */
 		
-	/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	*/	
 				
-	/* SCANNER:
+/* SCANNER:
 	 
 		  	+ biblioteca deve ser importada :
 		  		- import java.util.Scanne             */
+		
 		/*	System.out.println("-----TESTE DE SCANNER");
 			Scanner input = new Scanner(System.in); // criação do scanner 
 	    	System.out.println("Enter your name: ");
@@ -67,10 +77,37 @@ public class Exemplo001 {
 	    	input.close();//fechamento do scanner
 	    	System.out.println("Hello, " + nome +' '+idade);
 	    */
-    /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		
+		//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+		// STRING 
+				
+			/*	Scanner in = new Scanner(System.in);
+												 						
+				// capitura  primeiro nome 
+				System.out.print("Digite o primeiro nome: ");/////////////next ele capitura a token "palavraa" 
+				String primeiroNome = in.next();						//ete encomtrar um epaxo em branco oubra de linha"\n"
+				System.out.println("Primeiro nome: " + primeiroNome);   // porem ele nao comsome o "\n" dexando-o no fluxo de entrada
+		 
+				// Consume newline character after first name
+				in.nextLine(); /////////////////////////////////////////// este nextLine e chamado para comsumir o "\n" 
+																		//dexado no fluxo . como o ponteiro do fluxo aponta para \n ele se encera outomaticamente
+																		//dexando o ponteiro no inicio de uma linha vasia
+				// capitura nome completo	
+				System.out.print("Digite o nome completo: ");
+				String nomeCompleto = in.nextLine();/////////////////////este inicia em uma linha completamente vazia o
+				System.out.println("Nome completo: " + nomeCompleto);  //onde o ponteiro foi deixado pelo nextLine anterior
+
+				in.close();
+			*/
+		
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
      */
     	
 // LOOPs
+		
+		
+		
 	//IF-ELSE e else if
 	    	
 	   /* 	int valor=7;
@@ -83,7 +120,10 @@ public class Exemplo001 {
 	    			System.out.println("valor menor a 8");
 	    	}
 	    */	
-		/*	float n1,n2,n3;
+		/*	//exemplo de uso
+		 
+		    System.out.println("media de notas");
+		    float n1,n2,n3;
 			System.out.println("-------teste if-else");
 			Scanner in = new Scanner(System.in);
 			System.out.println("DIGITE A PRIMEIRA NOTA; ");
@@ -104,8 +144,201 @@ public class Exemplo001 {
 			}	
 		*/	
 			
-	    	  	
+	//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 	    	
+	
+	//SWITCH-CASE 
+			
+		/*  int numero = 0;
+			System.out.println("escolha uma opcoao de 1 a 2!");
+			Scanner opcao = new Scanner(System.in);
+			numero = opcao.nextInt() ;
+			opcao.close();
+			switch (numero) {
+				case 1 : {
+					System.out.println("o numero é! um");
+					break;//apos entrar em um cese ele execurara dodos os cases a baixo :
+						  // param isso serve o break , ele encera o switch
+				}
+				case 2: 
+				case 3:{
+					System.out.println("o numero é! dois ou tres");
+					break;
+				}
+				default :{
+					System.out.println("a opcao nao é! avalida");
+				}
+					
+			}
+		*/
+	
+	//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+	
+			
+	//WHILE
+		
+											//testa primeiro executa depois									
+		/*	int numero = 1;
+			while (numero<=20) {
+				System.out.println(numero);
+				numero++;
+			}
+		*/	
+			
+											//executa primeiro testa depois	
+		
+		/*	int numero= 6;
+			do {
+				System.out.println(numero);
+				numero++;
+			} while (numero<=5);
+		*/	
+			
+		
+		
+	//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+	
+	//FOR
+			
+		/*	for (int i=1;i<=5;i++) {
+				System.out.println(i);				
+			}
+		*/
+		
+		//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+		//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+			
+		//for each	
+		
+				//	O loop for each é mais simples e conciso para 
+				//	casos em que você apenas precisa imprimir
+				//	os elementos da coleção.
+				
+			/*	int[] notas= {9,10,8};
+				for(int valor:notas) {
+					System.out.println("nota :"+valor);
+				}
+			*/	
+		//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+		//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+		
+		//BIDIMENCIONAIS
+		
+			/*	int[][] matriz ={ {1,2},{3,4} };
+						
+				for (int l = 0; l < matriz.length; l++) {   //length da o tanto da linha neste caso 2
+					for (int c = 0; c < matriz[l].length; c++) {//aki length dis quantos linhas tem dentro de cada [l] da mateiz nno caso 2
+						System.out.print(matriz[l][c]+" ");
+					}
+					System.out.println("");
+				}		
+			*/	
+				int[][] matriz ={ {1,2},{3,4} };
+				
+				for (int[] linha : matriz) {   //length da o tanto da linha neste caso 2
+					for (int coluna :linha) {//aki length dis quantos linhas tem dentro de cada [l] da mateiz nno caso 2
+						System.out.print(coluna+" ");
+					}
+					System.out.println("");
+				}
+						
+		
+			
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ * */
+
+// STRING 
+		 //String é um class embora seja usado como tipo primitivo
+		//logica igual ao de votero porem tem funcionalidades intrincicas a oq fos dela uma classe 
+		
+		/*	String nome = "icaro" ;
+			System.out.println("aluno : "+nome);
+		*/	
+		
+																	//FUNCIONAMENTO DA Scanner:
+		/*	Scanner in = new Scanner(System.in);
+											 						
+			// capitura  primeiro nome 
+			System.out.print("Digite o primeiro nome: ");/////////////next ele capitura a token "palavraa" 
+			String primeiroNome = in.next();						//ete encomtrar um epaxo em branco oubra de linha"\n"
+			System.out.println("Primeiro nome: " + primeiroNome);   // porem ele nao comsome o "\n" dexando-o no fluxo de entrada
+	 
+			// Consome quebra de linha após o primeiro nome
+			in.nextLine(); /////////////////////////////////////////// este nextLine e chamado para comsumir o "\n" 
+																	//dexado no fluxo . como o ponteiro do fluxo aponta para \n ele se encera outomaticamente
+																	//dexando o ponteiro no inicio de uma linha vasia
+			// capitura nome completo	
+			System.out.print("Digite o nome completo: ");
+			String nomeCompleto = in.nextLine();/////////////////////este inicia em uma linha completamente vazia o
+			System.out.println("Nome completo: " + nomeCompleto);  //onde o ponteiro foi deixado pelo nextLine anterior
+													
+			in.close();												//OUTRAS OPCOES PARA LIDAR COM O "\n":
+		*/															 	
+																    //in.nextLine(): Opção mais simples e direta para consumir o caractere de quebra de linha (\n).
+																    //in.useDelimiter(): Permite capturar o nome completo em uma única chamada, mas exige a definição do delimitador.
+																	//in.hasNextLine(): Oferece verificação explícita de disponibilidade da linha, mas aumenta a complexidade.
+																	//Loop while: Útil para construir o nome completo caractere por caractere, mas menos eficiente para nomes longos.
+		
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/	
+		
+// ARRAY OU VETOR		fomas de declaracao "int[] vetor" ou "int vetor[]" 
+						// em um eu declaro q é uma matriz de inteiros chamada vetor
+						// no outro q é um vetor chamado vetor de inteiros
+					
+			
+			//por array nao ser um dao primitivo é obrigatoria a inicializao assim como Scanner[
+			
+		/*	int[] nota=new int[3];	           
+			 							
+			nota[0]=9;
+			nota[1]=10;
+			nota[2]=8;
+			
+			for(int i=0 ; i<3 ;i++) {
+				System.out.println("nota :"+nota[i]);
+			}
+		*/
+			
+		/*	int[] nota = {9,10,8};	 //inicializacao dinamica          
+		
+			for(int i =0 ;i<3;i++) {
+				System.out.println("nota :"+nota[i]);
+			}
+		*/
+			
+		/*	int[] nota = {9,10,8};	 //inicializacao dinamica          
+			
+			for(int valor:nota) {    // for each
+				System.out.println("nota :"+valor);
+			}
+		*/
+		
+		//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+		//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+		
+		//BIDIMENCIONAIS
+			
+		/*	int[][] matriz ={ {1,2},{3,4} };
+					
+			for (int l = 0; l < matriz.length; l++) {   //length da o tanto da linha neste caso 2
+				for (int c = 0; c < matriz[l].length; c++) {//aki length dis quantos linhas tem dentro de cada [l] da mateiz nno caso 2
+					System.out.print(matriz[l][c]+" ");
+				}
+				System.out.println("");
+			}
+		*/	
+			
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }
