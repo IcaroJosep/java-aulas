@@ -5,5 +5,6 @@
     <fullyQualifiedTypeName name="org.graalvm.compiler.nodes.NodeView.Default"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="Aluno"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
