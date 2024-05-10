@@ -1,10 +1,18 @@
 
 public class Principal {
 /*
- * 			HERANÇA
- * 	todos os GATs e SATs de nome e inclusive nome vem da clase pessoa
- * 
- * 
+  			
+  	programacao poo clases abistratas e herança:
+    animais se locomoevem ,
+    eu e meu cao somos animais ele pertencente a classe canina e eu a humana
+    assim a aclase animais seria a classe abistrata ;
+    
+    quanto a herança seria o fato de nos dois nos locomovermos
+    atributo herdado da classe animal ,
+    o fato de eu ser bipede e meu cao quadrupede sereia uma sobescricao
+	do metodo locomocao chamado polimorfismo"
+  
+  
  * */
 	public static void main(String[] args) {
 		Aluno aluno =new Aluno();

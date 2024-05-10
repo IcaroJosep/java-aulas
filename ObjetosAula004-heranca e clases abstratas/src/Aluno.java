@@ -1,7 +1,7 @@
 
 public class Aluno extends Pessoa {
 	
-	double teste,prova;
+	private double teste,prova;
 	
 	
 	public double getTeste() {
