@@ -4,9 +4,11 @@
     <fullyQualifiedTypeName name="java.lang.Float"/>
     <fullyQualifiedTypeName name="org.graalvm.compiler.nodes.NodeView.Default"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="Aluno"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="Professor"/>
+    <fullyQualifiedTypeName name="AlunoEnsinoMedio"/>
+    <fullyQualifiedTypeName name="AlunoEnsinosuperior"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="Pessoa"/>
+    <fullyQualifiedTypeName name="Aluno"/>
 </qualifiedTypeNameHistroy>

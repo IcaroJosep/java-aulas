@@ -1,5 +1,15 @@
 
 public class Principal {
+	
+	
+	/*		ha interface neste progeto é a "clase" Media: descricao detalhada na classe media
+	 * 
+	 * Resumo:
+	 * uma interface cria a obrigatoriedade
+	 * da inplementacao de um metodo na queles
+	 * q a herdao em algum nivel  
+	 * 
+	 * */
 
 	public static void main(String[] args) {
 		AlunoEnsinoMedio alunoEnsinoMedio = new AlunoEnsinoMedio();
