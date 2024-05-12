@@ -236,7 +236,7 @@ public class Exemplo001 {
 				int[][] matriz ={ {1,2},{3,4} };
 				
 				for (int[] linha : matriz) {   //length da o tanto da linha neste caso 2
-					for (int coluna :linha) {//aki length dis quantos linhas tem dentro de cada [l] da mateiz nno caso 2
+					for (int coluna :linha) {//aki length dis quantos colunas tem dentro de cada [l] da mateiz no caso 2
 						System.out.print(coluna+" ");
 					}
 					System.out.println("");
