@@ -1,5 +1,7 @@
 package discentes;
 
+
+
 public class AlunoSuperior extends Aluno {
 
 	public double getMedia() {

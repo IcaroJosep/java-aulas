@@ -3,14 +3,15 @@
     <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.Float"/>
     <fullyQualifiedTypeName name="org.graalvm.compiler.nodes.NodeView.Default"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="Professor"/>
     <fullyQualifiedTypeName name="AlunoEnsinoMedio"/>
     <fullyQualifiedTypeName name="AlunoEnsinosuperior"/>
-    <fullyQualifiedTypeName name="Pessoa"/>
     <fullyQualifiedTypeName name="Aluno"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="discentes.Aluno"/>
     <fullyQualifiedTypeName name="discentes.AlunoSuperior"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="Pessoa"/>
+    <fullyQualifiedTypeName name="Operador"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
