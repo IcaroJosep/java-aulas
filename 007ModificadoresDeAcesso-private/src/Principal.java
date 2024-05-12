@@ -23,7 +23,11 @@ public class Principal {
 	Através de técnicas avançadas, a reflexão permite acessar e modificar elementos private,
 	mas não é uma prática recomendada, pois viola o encapsulamento e pode gerar instabilidade no código.
 	
- * */
+ * 
+neste codigo as variaveis da class aluno forao alteradas para private
+oq gerou a nesesidade de altera o codigo das outras para faze o acesso.
+ 
+ */
 	public static void main(String[] args) {
 		AlunoSuperior aluno = new AlunoSuperior();
 		
