@@ -7,11 +7,12 @@
     <fullyQualifiedTypeName name="AlunoEnsinoMedio"/>
     <fullyQualifiedTypeName name="AlunoEnsinosuperior"/>
     <fullyQualifiedTypeName name="Aluno"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="discentes.Aluno"/>
     <fullyQualifiedTypeName name="discentes.AlunoSuperior"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="Pessoa"/>
     <fullyQualifiedTypeName name="Operador"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.IF_ICMPLE"/>
 </qualifiedTypeNameHistroy>
