@@ -21,7 +21,7 @@ public class Principal {
 		
 		String nome = "icaro";
 		String nomeDeGerra="icaro";
-		String nomeDeGerra2= new String("icaro");
+		String nomeOutroEndereçoDeMemoria= new String("icaro");
 		
 		
 		if(nome==nomeDeGerra) {
@@ -30,7 +30,7 @@ public class Principal {
 			System.out.println("nomes diferentes");	
 		}
 		
-		if(nome==nomeDeGerra2) {
+		if(nome==nomeOutroEndereçoDeMemoria) {
 			System.out.println("nomes iguais");
 		}else {
 			System.out.println("nomes diferentes");	
