@@ -15,10 +15,12 @@ public class Exemplo001 {
 			long  x3 = 99999999999L; // -9223372036854775808 to 9223372036854775807
 	    */
 			/*float x4 = 1.2;
-			 * o java entende por padrão como double para q ele aceite a declaração vc 
-			tem q informa-lo da ciente da perda de precisão da 
-			seguinte forma :		*/
-		/*	float x4=1.2f;                  //float em Java pode armazenar até 7 dígitos significativos, incluindo a parte inteira e decimal
+			  						o java entende por padrão como double para q ele aceite a declaração vc 
+									tem q informa-lo da ciente da perda de precisão da 
+									seguinte forma :		
+		*/
+		/*	float x4=1.2f;           //float em Java pode armazenar até 7
+		                             //dígitos significativos, incluindo a parte inteira e decim
 			float x4b=(float) 1.2;   //precisao 0.000007
 		
 			double x5 = 99.99d;  // segue mesmas regras do float so q com 15 casas
@@ -76,29 +78,30 @@ public class Exemplo001 {
 	    	int idade = input.nextInt(); //atribuicao de int a variavel idade
 	    	input.close();//fechamento do scanner
 	    	System.out.println("Hello, " + nome +' '+idade);
-	    */
+	   */
 		
 		//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 		// STRING 
 				
-			/*	Scanner in = new Scanner(System.in);
+		/*		Scanner in = new Scanner(System.in);
 												 						
 				// capitura  primeiro nome 
 				System.out.print("Digite o primeiro nome: ");/////////////next ele capitura a token "palavraa" 
-				String primeiroNome = in.next();						//ete encomtrar um epaxo em branco oubra de linha"\n"
-				System.out.println("Primeiro nome: " + primeiroNome);   // porem ele nao comsome o "\n" dexando-o no fluxo de entrada
+				String primeiroNome = in.next();						//ete encomtrar um espaço em branco quebra de linha"\n"
+				System.out.println("Primeiro nome: " + primeiroNome);   //porem ele nao comsome o "\n" dexando-o no fluxo de entrada
 		 
-				// Consume newline character after first name
+				// Consume newline 
 				in.nextLine(); /////////////////////////////////////////// este nextLine e chamado para comsumir o "\n" 
-																		//dexado no fluxo . como o ponteiro do fluxo aponta para \n ele se encera outomaticamente
-																		//dexando o ponteiro no inicio de uma linha vasia
+																		// deixando o fluxo de entrada vazio
+																		
 				// capitura nome completo	
 				System.out.print("Digite o nome completo: ");
-				String nomeCompleto = in.nextLine();/////////////////////este inicia em uma linha completamente vazia o
-				System.out.println("Nome completo: " + nomeCompleto);  //onde o ponteiro foi deixado pelo nextLine anterior
+				String nomeCompleto = in.nextLine();/////////////////////Aqui nextLine é usado para comsumir a proxima linha
+				System.out.println("Nome completo: " + nomeCompleto);  //completamente incusive o "\n"
+				 
 
 				in.close();
-			*/
+		*/	
 		
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -233,7 +236,7 @@ public class Exemplo001 {
 					System.out.println("");
 				}		
 			*/	
-				int[][] matriz ={ {1,2},{3,4} };
+			/*	int[][] matriz ={ {1,2},{3,4} };
 				
 				for (int[] linha : matriz) {   //length da o tanto da linha neste caso 2
 					for (int coluna :linha) {//aki length dis quantos colunas tem dentro de cada [l] da mateiz no caso 2
@@ -241,7 +244,7 @@ public class Exemplo001 {
 					}
 					System.out.println("");
 				}
-						
+			*/			
 		
 			
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -250,13 +253,14 @@ public class Exemplo001 {
 
 // STRING 
 		 //String é um class embora seja usado como tipo primitivo
-		//logica igual ao de votero porem tem funcionalidades intrincicas a oq fos dela uma classe 
+		//logica igual ao de veter porem tem funcionalidades intrincicas 
+		//a o fato dela ser uma classe 
 		
 		/*	String nome = "icaro" ;
 			System.out.println("aluno : "+nome);
 		*/	
 		
-																	//FUNCIONAMENTO DA Scanner:
+											//FUNCIONAMENTO DA Scanner:
 		/*	Scanner in = new Scanner(System.in);
 											 						
 			// capitura  primeiro nome 
@@ -285,8 +289,8 @@ public class Exemplo001 {
 */	
 		
 // ARRAY OU VETOR		fomas de declaracao "int[] vetor" ou "int vetor[]" 
-						// em um eu declaro q é uma matriz de inteiros chamada vetor
-						// no outro q é um vetor chamado vetor de inteiros
+						// "int[] vetor" permite a inicializacao na mesma linha 
+						// "int vetor[]" obriga a inicializacao em uma linha diferente
 					
 			
 			//por array nao ser um dao primitivo é obrigatoria a inicializao assim como Scanner[
@@ -301,8 +305,24 @@ public class Exemplo001 {
 				System.out.println("nota :"+nota[i]);
 			}
 		*/
+		/*	int nota[];
+		    nota=new int[3];	           
+				
+			nota[0]=9;
+			nota[1]=10;
+			nota[2]=8;
 			
-		/*	int[] nota = {9,10,8};	 //inicializacao dinamica          
+			for(int i=0 ; i<3 ;i++) {
+				System.out.println("nota :"+nota[i]);
+			}
+		 */
+		
+		
+		
+		//inicializacao dinamica 
+		
+		
+		/*	int[] nota = {9,10,8};	          
 		
 			for(int i =0 ;i<3;i++) {
 				System.out.println("nota :"+nota[i]);

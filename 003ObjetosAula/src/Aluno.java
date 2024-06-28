@@ -2,7 +2,7 @@
 public class Aluno {
 	
 	private String nome;
-	private double teste,prova;
+	private double prova;
 	
 	public String getNome() {
 		return nome;
@@ -11,12 +11,7 @@ public class Aluno {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public double getTeste() {
-		return teste;
-	}
-	public void setTeste(double teste) {
-		this.teste = teste;
-	}
+	
 	public double getProva() {
 		return prova;
 	}
@@ -24,9 +19,7 @@ public class Aluno {
 		this.prova = prova;
 	}
 	
-	double getMedia() {
-		return(teste+prova)/2;
-	}
+	
 	
 	
 }

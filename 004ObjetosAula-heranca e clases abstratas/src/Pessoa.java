@@ -1,6 +1,6 @@
 
 public class Pessoa {
-  String name;
+  private String name;
 
 public String getName() {
 	return name;
